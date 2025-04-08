@@ -25,8 +25,8 @@ PrimaryBuffer::PrimaryBuffer(DSound8OAL &parent) : mParent{parent}, mMutex{paren
     /* Make sure the format is valid, store 16-bit stereo 44.1khz by default. */
     mFormat.Format.wFormatTag = WAVE_FORMAT_PCM;
     mFormat.Format.nChannels = 2;
-    mFormat.Format.nSamplesPerSec = 44100;
-    mFormat.Format.nAvgBytesPerSec = 44100 * 4;
+    mFormat.Format.nSamplesPerSec = 48000;
+    mFormat.Format.nAvgBytesPerSec = 48000 * 4;
     mFormat.Format.nBlockAlign = 4;
     mFormat.Format.wBitsPerSample = 16;
     mFormat.Format.cbSize = 0;
